@@ -104,11 +104,11 @@ nav {
   margin-bottom: 30px;
 }
 
-.banner-inner .banner-buttons {
+.banner-buttons {
   position: relative;
 }
 
-.banner-inner .banner-buttons button {
+.banner-buttons button {
   width: 180px;
   box-sizing: border-box;
   border-radius: 50px;
@@ -273,11 +273,211 @@ nav {
 
 /* Scammers */
 .scammers {
-  background: url(new-banner-5.jpg);
-  opacity: 0.1;
-  
+  background: url("images/Rectangle\ 2.png");
   width: 100%;
   padding: 3rem;
+  text-align: center;
+}
+
+.scammer-inner {
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+}
+
+.scammer-header {
+  margin-bottom: 40px;
+}
+
+.scammer-contents {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.scammer {
+  width: 300px;
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  font-family: "Inter";
+  font-style: normal;
+}
+
+.scammer h4 {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 160%;
+  color: #000000;
+  margin: 18px 0;
+}
+
+.scammer h4 .rate {
+  background: rgba(173, 32, 32, 0.3);
+  border-radius: 15.3226px;
+  padding: 6px 32px;
+  font-size: 14px;
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+.scammer p {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 160%;
+  color: #ad2020;
+}
+
+.scammer a {
+  font-style: italic;
+  font-weight: 500;
+  font-size: 16px;
+  color: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.scammer a img {
+  margin-left: 5px;
+}
+
+.scammers-btn {
+  margin-top: 30px;
+}
+
+.scammers-btn a {
+  width: 180px;
+  border-radius: 50px;
+  font-family: "Manrope";
+  font-style: normal;
+  font-size: 16px;
+  line-height: 25px;
+  text-transform: capitalize;
+  margin: 0px 10px;
+  padding: 10px 24px;
+  outline: none;
+  color: #ffffff;
+  background: #0d59ef;
+}
+
+/* Feel like being scammed */
+.scammed {
+  padding: 3rem;
+  width: 100%;
+  position: relative;
+}
+
+.scammed-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Inter";
+  font-style: normal;
+  width: 50vw;
+  margin: 0 auto;
+  position: relative;
+}
+
+.scammed-inner h2 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 0.12px;
+  margin: 20px 0;
+  color: #042552
+}
+
+.scammed img {
+    position: absolute;
+    top: 24%;
+    right: 18%;
+}
+
+.scammed-inner p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+  color: rgba(30, 37, 50, 0.6);
+  margin: 10px 0;
+}
+
+.fraud {
+    display: flex;
+}
+
+#case {
+  border: 1px solid #0d59ef;
+  color: #0d59ef;
+}
+
+/* Footer */
+footer {
+  background: #042552;
+}
+
+footer .footer-inner {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 3rem;
+}
+
+footer .footer-inner .footer-items {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+footer .footer-inner .footer-items a {
+    margin-bottom: 15px;
+}
+
+footer .footer-inner .footer-items h4 {
+    font-family: 'Inter';
+    font-style: normal;
+color: #FFFFFF;
+    font-weight: 500;
+font-size: 18px;
+line-height: 22px;
+margin-bottom: 15px;
+}
+
+footer .footer-inner .footer-items ul li, footer .footer-inner .footer-items p {
+       font-family: 'Inter';
+    font-style: normal;
+color: #FFFFFF;
+font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+opacity: .3;
+padding: 8px 0;
+max-width: 300px;
+}
+
+footer .foot-note {
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+}
+
+footer .foot-note p {
+  font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 24px;
+text-align: center;
+color: #FFFFFF;
+opacity: .3;
 }
 
 /* Media queries */
@@ -310,6 +510,20 @@ nav {
   .info-content {
     padding: 0;
   }
+
+  .scammers {
+    padding: 2rem;
+  }
+
+  .scammer-contents {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+  .scammer {
+    width: 100%;
+    margin-bottom: 20px;
+  }
 }
 
 @media (max-width: 568px) {
@@ -330,7 +544,7 @@ nav {
     line-height: 40px;
   }
 
-  .banner-inner .banner-buttons button {
+  .banner-buttons button {
     margin-bottom: 20px;
   }
 
@@ -358,5 +572,39 @@ nav {
 
   .information {
     padding: 2rem;
+  }
+
+  .scammer-contents {
+    grid-template-columns: auto;
+  }
+
+  .scammed {
+    padding: 3rem 0;
+}
+
+.scammed-inner {
+  width: 80vw;
+}
+
+.fraud {
+  flex-direction: column;
+}
+
+footer .footer-inner{
+  flex-direction: column;
+}
+
+footer .footer-inner .footer-items{
+  margin-bottom: 20px;
+}
+}
+
+@media (max-width: 320px) {
+  .scammer h4 .rate {
+    padding: 6px 22px;
+  }
+
+  .scammer {
+    padding: 1.5rem;
   }
 }
