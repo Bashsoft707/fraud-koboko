@@ -364,6 +364,102 @@ nav {
   background: #0d59ef;
 }
 
+/* Testimonials */
+.testimonial {
+  padding: 3rem 0;
+  padding-left: 4rem;
+  width: 100%;
+  position: relative;
+}
+
+.testimonial-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 4rem;
+  margin-bottom: 30px;
+}
+
+.testimonial-header .testimonial-heading {
+  position: relative;
+    font-family: 'Inter';
+font-style: normal;
+}
+
+.testimonial-heading h5 {
+font-weight: 500;
+font-size: 13px;
+line-height: 28px;
+color: #645CFE;
+}
+
+.testimonial-heading h2 {
+  font-weight: 700;
+font-size: 32px;
+line-height: 45px;
+letter-spacing: 0.12px;
+color: #042552;
+}
+
+.testimonials {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.testimonials .testimonial-box {
+  width: 350px;
+  background: #FFFFFF;
+box-shadow: 0px 4px 60px rgba(13, 89, 239, 0.06);
+border-radius: 10px;
+margin-left: 20px;
+padding: 2rem;
+}
+
+.testimonials .testimonial-box img {
+  width: 55px;
+    height: 55px;
+}
+
+.profile {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.profile .profile-details {
+  font-family: 'Inter';
+font-style: normal;
+margin-left: 20px;
+}
+
+.profile .profile-details h4{
+  font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 30px;
+color: #042552;
+margin-bottom: 10px;
+}
+
+.profile .profile-details p {
+  font-weight: 400;
+font-size: 14px;
+line-height: 24px;
+color: #042552;
+opacity: 0.7;
+}
+
+.testimonial-desc {
+  font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 28px;
+color: rgba(30, 37, 50, 0.6);
+}
+
 /* Feel like being scammed */
 .scammed {
   padding: 3rem;
@@ -524,6 +620,37 @@ opacity: .3;
     width: 100%;
     margin-bottom: 20px;
   }
+
+  .controls img{
+    width: 45px;
+    height: 45px;
+  }
+
+  .testimonial-heading h2 {
+  font-size: 22px;
+  line-height: 35px;
+  }
+
+  .testimonial-box {
+    padding: 1rem;
+  }
+
+  .profile .profile-details {
+  margin-left: 10px;
+  }
+  
+  .profile .profile-details h4{
+  font-size: 13px;
+  line-height: 22px;
+  }
+  
+  .profile .profile-details p {
+    font-weight: 400;
+  font-size: 11px;
+  line-height: 24px;
+  color: #042552;
+  opacity: 0.7;
+  }
 }
 
 @media (max-width: 568px) {
@@ -574,12 +701,43 @@ opacity: .3;
     padding: 2rem;
   }
 
+  .info-content h2 {
+    font-size: 20px;
+   line-height: 30px;
+}
+
   .scammer-contents {
     grid-template-columns: auto;
   }
 
+  .testimonial {
+    padding-left: 0;
+  
+  }
+
+  .testimonial-header {
+    padding-left: 0;
+    padding-right: 0;
+    padding: 1.4rem;
+  }
+
+  .testimonials {
+    flex-direction: column;
+  }
+
+  .testimonial .testimonial-box {
+    margin-left: 0;
+  }
+
   .scammed {
     padding: 3rem 0;
+}
+
+.scammed img {
+    top: 20%;
+    right: 5%;
+    width: 160px;
+    height: 60px;
 }
 
 .scammed-inner {
