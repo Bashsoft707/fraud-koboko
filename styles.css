@@ -171,6 +171,22 @@ a {
   padding: 2rem;
 }
 
+.how-works-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.how-works-header h2{
+  font-family: 'Inter', sans-serif;
+font-style: normal;
+font-weight: 600;
+font-size: 36px;
+line-height: 50px;
+color: #042552;
+}
+
 .how-it-works-inner {
   display: grid;
   grid-template-columns: auto auto auto;
@@ -753,6 +769,11 @@ footer .foot-note p {
 
   .how-it-works-inner .work-box {
     width: 250px;
+  }
+
+  .how-works-header h2{
+font-size: 20px;
+line-height: 20px;
   }
 
   .report-inner {
