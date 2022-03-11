@@ -1,6 +1,6 @@
 /* General styling  */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Manrope:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Manrope:wght@300&display=swap");
 
 * {
   margin: 0;
@@ -27,7 +27,7 @@ a {
 }
 
 /* Nav section */
-nav {
+.navbar {
   width: 100%;
   position: relative;
   padding: 10px 30px;
@@ -35,14 +35,24 @@ nav {
 
 .navs {
   display: flex;
+  position: relative;
   justify-content: space-between;
   align-items: center;
+  background-color: white;
 }
 
-.navs .nav-list {
+.brand-title {
+  margin: 0.5rem;
+}
+
+.navbar-links {
+  height: 100%;
+}
+
+.navbar-links ul {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  margin: 0;
+  padding: 0;
 }
 
 .navs .nav-list .nav-list-item {
@@ -51,7 +61,7 @@ nav {
 }
 
 .navs .nav-list .nav-list-item .nav-links {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -64,6 +74,24 @@ nav {
   border-radius: 50px;
   color: #fff;
   padding: 10px 24px;
+}
+
+.toggle-button {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: black;
+  border-radius: 10px;
 }
 
 /* Banner Section */
@@ -89,7 +117,7 @@ nav {
 }
 
 .banner-inner .banner-title {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 60px;
@@ -98,7 +126,7 @@ nav {
 }
 
 .banner-inner .banner-desc {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -115,7 +143,7 @@ nav {
   width: 180px;
   box-sizing: border-box;
   border-radius: 50px;
-  font-family: 'Manrope', sans-serif;
+  font-family: "Manrope", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -159,7 +187,7 @@ nav {
   box-shadow: 0px 4px 60px rgba(13, 89, 239, 0.06);
   border-radius: 10px;
   padding: 1.5rem;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   display: grid;
   grid-gap: 0;
@@ -203,7 +231,7 @@ nav {
   align-items: center;
   color: #ffffff;
   text-align: center;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 .reports img {
@@ -235,7 +263,7 @@ nav {
 
 .info-content {
   padding: 2rem;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
 }
 
@@ -291,7 +319,7 @@ nav {
 
 .scammer-header {
   margin-bottom: 40px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 .scammer-contents {
@@ -307,7 +335,7 @@ nav {
   padding: 2rem;
   display: flex;
   flex-direction: column;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
 }
 
@@ -387,23 +415,23 @@ nav {
 
 .testimonial-header .testimonial-heading {
   position: relative;
-    font-family: 'Inter', sans-serif;
-font-style: normal;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
 }
 
 .testimonial-heading h5 {
-font-weight: 500;
-font-size: 13px;
-line-height: 28px;
-color: #645CFE;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 28px;
+  color: #645cfe;
 }
 
 .testimonial-heading h2 {
   font-weight: 700;
-font-size: 32px;
-line-height: 45px;
-letter-spacing: 0.12px;
-color: #042552;
+  font-size: 32px;
+  line-height: 45px;
+  letter-spacing: 0.12px;
+  color: #042552;
 }
 
 .testimonials {
@@ -414,16 +442,16 @@ color: #042552;
 
 .testimonials .testimonial-box {
   width: 350px;
-  background: #FFFFFF;
-box-shadow: 0px 4px 60px rgba(13, 89, 239, 0.06);
-border-radius: 10px;
-margin-left: 20px;
-padding: 2rem;
+  background: #ffffff;
+  box-shadow: 0px 4px 60px rgba(13, 89, 239, 0.06);
+  border-radius: 10px;
+  margin-left: 20px;
+  padding: 2rem;
 }
 
 .testimonials .testimonial-box img {
   width: 55px;
-    height: 55px;
+  height: 55px;
 }
 
 .profile {
@@ -433,36 +461,36 @@ padding: 2rem;
 }
 
 .profile .profile-details {
-  font-family: 'Inter', sans-serif;
-font-style: normal;
-margin-left: 20px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  margin-left: 20px;
 }
 
-.profile .profile-details h4{
-  font-family: 'Inter', sans-serif;
-font-style: normal;
-font-weight: 700;
-font-size: 20px;
-line-height: 30px;
-color: #042552;
-margin-bottom: 10px;
+.profile .profile-details h4 {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  color: #042552;
+  margin-bottom: 10px;
 }
 
 .profile .profile-details p {
   font-weight: 400;
-font-size: 14px;
-line-height: 24px;
-color: #042552;
-opacity: 0.7;
+  font-size: 14px;
+  line-height: 24px;
+  color: #042552;
+  opacity: 0.7;
 }
 
 .testimonial-desc {
-  font-family: 'Inter', sans-serif;
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 28px;
-color: rgba(30, 37, 50, 0.6);
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+  color: rgba(30, 37, 50, 0.6);
 }
 
 /* Feel like being scammed */
@@ -477,7 +505,7 @@ color: rgba(30, 37, 50, 0.6);
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   width: 50vw;
   margin: 0 auto;
@@ -491,13 +519,13 @@ color: rgba(30, 37, 50, 0.6);
   text-align: center;
   letter-spacing: 0.12px;
   margin: 20px 0;
-  color: #042552
+  color: #042552;
 }
 
 .scammed img {
-    position: absolute;
-    top: 24%;
-    right: 18%;
+  position: absolute;
+  top: 24%;
+  right: 18%;
 }
 
 .scammed-inner p {
@@ -510,7 +538,7 @@ color: rgba(30, 37, 50, 0.6);
 }
 
 .fraud {
-    display: flex;
+  display: flex;
 }
 
 #case {
@@ -524,42 +552,43 @@ footer {
 }
 
 footer .footer-inner {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    padding: 3rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 3rem;
 }
 
 footer .footer-inner .footer-items {
-    display: flex;
-    flex-direction: column;
-    position: relative;
+  display: flex;
+  flex-direction: column;
+  position: relative;
 }
 
 footer .footer-inner .footer-items a {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 footer .footer-inner .footer-items h4 {
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
-color: #FFFFFF;
-    font-weight: 500;
-font-size: 18px;
-line-height: 22px;
-margin-bottom: 15px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 15px;
 }
 
-footer .footer-inner .footer-items ul li, footer .footer-inner .footer-items p {
-       font-family: 'Inter', sans-serif;
-    font-style: normal;
-color: #FFFFFF;
-font-weight: 400;
-font-size: 14px;
-line-height: 17px;
-opacity: .3;
-padding: 8px 0;
-max-width: 300px;
+footer .footer-inner .footer-items ul li,
+footer .footer-inner .footer-items p {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  opacity: 0.3;
+  padding: 8px 0;
+  max-width: 300px;
 }
 
 footer .foot-note {
@@ -571,14 +600,14 @@ footer .foot-note {
 }
 
 footer .foot-note p {
-  font-family: 'Inter', sans-serif;
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 24px;
-text-align: center;
-color: #FFFFFF;
-opacity: .3;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  color: #ffffff;
+  opacity: 0.3;
 }
 
 /* Media queries */
@@ -592,7 +621,7 @@ opacity: .3;
 
 @media (max-width: 768px) {
   .navs .nav-list .nav-list-item {
-    padding: 10px 16px;
+    padding: 10px 12px;
   }
 
   .banner .banner-inner {
@@ -626,14 +655,21 @@ opacity: .3;
     margin-bottom: 20px;
   }
 
-  .controls img{
+  .scammed img {
+    top: 28%;
+    right: 8%;
+    width: 120px;
+    height: 40px;
+}
+
+  .controls img {
     width: 45px;
     height: 45px;
   }
 
   .testimonial-heading h2 {
-  font-size: 22px;
-  line-height: 35px;
+    font-size: 22px;
+    line-height: 35px;
   }
 
   .testimonials .testimonial-box {
@@ -642,30 +678,62 @@ opacity: .3;
   }
 
   .profile .profile-details {
-  margin-left: 8px;
+    margin-left: 8px;
   }
-  
-  .profile .profile-details h4{
-  font-size: 13px;
-  line-height: 22px;
+
+  .profile .profile-details h4 {
+    font-size: 13px;
+    line-height: 22px;
   }
-  
+
   .profile .profile-details p {
     font-weight: 400;
-  font-size: 10px;
-  line-height: 24px;
-  color: #042552;
-  opacity: 0.7;
+    font-size: 10px;
+    line-height: 24px;
+    color: #042552;
+    opacity: 0.7;
   }
 }
 
 @media (max-width: 568px) {
   .navs {
     flex-direction: column;
+    align-items: flex-start;
   }
 
   .nav-list {
     flex-direction: column;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .toggle-button {
+    display: flex;
+  }
+
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+
+  .navbar-links ul {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .navbar-links ul li {
+    text-align: center;
+  }
+
+  .navbar-links ul li a {
+    padding: 0.5rem 1rem;
+  }
+
+  .navbar-links.active {
+    display: flex;
   }
 
   .how-it-works-inner {
@@ -709,8 +777,8 @@ opacity: .3;
 
   .info-content h2 {
     font-size: 20px;
-   line-height: 30px;
-}
+    line-height: 30px;
+  }
 
   .scammer-contents {
     grid-template-columns: auto;
@@ -718,7 +786,6 @@ opacity: .3;
 
   .testimonial {
     padding-left: 0;
-  
   }
 
   .testimonial-header {
@@ -738,36 +805,49 @@ opacity: .3;
   }
 
   .controls img {
-    width: 25px; 
+    width: 25px;
     height: 25px;
-}
+  }
 
   .scammed {
     padding: 3rem 0;
-}
+  }
 
-.scammed img {
-    top: 20%;
+  .scammed img {
+    top: 10%;
     right: 5%;
-    width: 160px;
+    width: 120px;
     height: 60px;
+  }
+
+  .scammed-inner h2 {
+    font-size: 20px;
 }
 
-.scammed-inner {
-  width: 80vw;
+  .scammed-inner {
+    width: 80vw;
+  }
+
+  .fraud {
+    flex-direction: column;
+  }
+
+  footer .footer-inner {
+    flex-direction: column;
+  }
+
+  footer .footer-inner .footer-items {
+    margin-bottom: 20px;
+  }
 }
 
-.fraud {
-  flex-direction: column;
-}
-
-footer .footer-inner{
-  flex-direction: column;
-}
-
-footer .footer-inner .footer-items{
-  margin-bottom: 20px;
-}
+@media (max-width: 375px) {
+  .scammed img {
+    top: 15%;
+    right: 10%;
+    width: 120px;
+    height: 60px;
+  }
 }
 
 @media (max-width: 320px) {
@@ -778,4 +858,11 @@ footer .footer-inner .footer-items{
   .scammer {
     padding: 1.5rem;
   }
+
+  .scammed img {
+    top: 18%;
+    right: 8%;
+    width: 120px;
+    height: 40px;
+}
 }
